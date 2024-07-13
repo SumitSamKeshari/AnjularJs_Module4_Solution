@@ -1,7 +1,47 @@
-li[ui-sref]:hover {
-  display: : inline-block;
-  cursor: pointer;
-  border: solid black 1px;
-  padding-left: 5px;
-  padding-right: 5px;
+body {
+    font-size: 1.4em;
+  }
+  li[ui-sref]:hover {
+    display: inline-block;
+    cursor: pointer;
+    border: solid black 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    background-color: rgb(223, 223, 223);
+  }
+  .my-card {
+    display: block;
+    background-color: aliceblue;
+    padding: 16px;
+    text-align: left;
+    border-color: black;
+    text-indent: 0.5px;
+  }
+  .margin-16 {
+    margin: 10px;
+  }
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
