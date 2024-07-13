@@ -25,12 +25,14 @@
     //   });
     // }
   service.getItemsForCategory = function (categoryShortName) {
+    var categoryJSON = "";
+
+    categoryJSON = categoryShortName + ".json";
+
+
   var response = $http({
     method: "GET",
-    url: (apiBasePath + "/menu_items.json"),
-    params: {
-      category: categoryShortName
-    }
+    url: (apiBasePath + "/menu_items/"+categoryJSON)
   });
   return response;
 };
