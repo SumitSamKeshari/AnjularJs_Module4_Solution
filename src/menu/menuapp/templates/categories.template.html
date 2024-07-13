@@ -3,6 +3,6 @@
 <ul>
   <li ng-repeat="category in categories.categoriesList"
       ui-sref="items({category: category.short_name })">
-      categoryId: {{category.id }}, categoryShortName: {{category.short_name}}, categoryName: {{ category.name }}
+      {{ category.name }}
   </li>
 </ul>
